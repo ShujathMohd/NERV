@@ -34,8 +34,9 @@ ADD_TO_WORK_DIR "a52qnsxx" "system" "system/etc/permissions/privapp-permissions-
 ADD_TO_WORK_DIR "a52qnsxx" "system" "system/priv-app/CameraLightSensor/CameraLightSensor.apk" 0 0 644 "u:object_r:system_file:s0"
 LOG_STEP_OUT
 
-LOG_STEP_IN "- Adding stock vintf manifest"
-ADD_TO_WORK_DIR "a52qnsxx" "system" "system/etc/vintf/manifest.xml" 0 0 644 "u:object_r:system_file:s0"
+LOG_STEP_IN "- Adding a73xqxx manifest xmls"
+ADD_TO_WORK_DIR "a73xqxx" "system" "system/etc/vintf/manifest.xml"
+ADD_TO_WORK_DIR "a73xqxx" "system" "system/etc/vintf/compatibility_matrix.device.xml"
 LOG_STEP_OUT
 
 DELETE_FROM_WORK_DIR "system" "system/etc/permissions/com.sec.feature.cover.clearcameraviewcover.xml"
